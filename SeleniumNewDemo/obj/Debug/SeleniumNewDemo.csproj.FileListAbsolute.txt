@@ -48,3 +48,16 @@ C:\Users\Admin\Desktop\repos\temp\Charles-Selenium-Webdriver\SeleniumNewDemo\obj
 C:\Users\Admin\Desktop\repos\temp\Charles-Selenium-Webdriver\SeleniumNewDemo\obj\Debug\SeleniumNewDemo.csproj.CopyComplete
 C:\Users\Admin\Desktop\repos\temp\Charles-Selenium-Webdriver\SeleniumNewDemo\obj\Debug\SeleniumNewDemo.exe
 C:\Users\Admin\Desktop\repos\temp\Charles-Selenium-Webdriver\SeleniumNewDemo\obj\Debug\SeleniumNewDemo.pdb
+C:\Users\Admin\Desktop\repos\Charles-Selenium-Webdriver-POM-only\SeleniumNewDemo\bin\Debug\Resource\Demo.html
+C:\Users\Admin\Desktop\repos\Charles-Selenium-Webdriver-POM-only\SeleniumNewDemo\bin\Debug\SeleniumNewDemo.exe.config
+C:\Users\Admin\Desktop\repos\Charles-Selenium-Webdriver-POM-only\SeleniumNewDemo\bin\Debug\SeleniumNewDemo.exe
+C:\Users\Admin\Desktop\repos\Charles-Selenium-Webdriver-POM-only\SeleniumNewDemo\bin\Debug\SeleniumNewDemo.pdb
+C:\Users\Admin\Desktop\repos\Charles-Selenium-Webdriver-POM-only\SeleniumNewDemo\bin\Debug\WebDriver.dll
+C:\Users\Admin\Desktop\repos\Charles-Selenium-Webdriver-POM-only\SeleniumNewDemo\bin\Debug\WebDriver.Support.dll
+C:\Users\Admin\Desktop\repos\Charles-Selenium-Webdriver-POM-only\SeleniumNewDemo\bin\Debug\WebDriver.xml
+C:\Users\Admin\Desktop\repos\Charles-Selenium-Webdriver-POM-only\SeleniumNewDemo\bin\Debug\WebDriver.Support.xml
+C:\Users\Admin\Desktop\repos\Charles-Selenium-Webdriver-POM-only\SeleniumNewDemo\obj\Debug\SeleniumNewDemo.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\repos\Charles-Selenium-Webdriver-POM-only\SeleniumNewDemo\obj\Debug\SeleniumNewDemo.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\repos\Charles-Selenium-Webdriver-POM-only\SeleniumNewDemo\obj\Debug\SeleniumNewDemo.csproj.CopyComplete
+C:\Users\Admin\Desktop\repos\Charles-Selenium-Webdriver-POM-only\SeleniumNewDemo\obj\Debug\SeleniumNewDemo.exe
+C:\Users\Admin\Desktop\repos\Charles-Selenium-Webdriver-POM-only\SeleniumNewDemo\obj\Debug\SeleniumNewDemo.pdb

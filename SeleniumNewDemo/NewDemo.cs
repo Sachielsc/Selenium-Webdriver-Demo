@@ -11,7 +11,7 @@ using System.IO;
 using System.Reflection;
 using OpenQA.Selenium.Support.UI;
 using OpenQA.Selenium.Support.PageObjects;
-using POMExample.PageObjects;
+using SeleniumNewDemo.PageObjects;
 
 namespace SeleniumNewDemo
 {
