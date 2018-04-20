@@ -34,18 +34,31 @@ namespace SeleniumPOMUnitTest
 		[TestMethod]
 		public void POMTestCase1()
 		{
+			// variable definitions
+			string userName = "sachielsc@gmail.com";
+			string passWord = "scsgdtcy3";
+			string searchKeyWord = "blue";
+			string firstName = "Chris";
+			string lastName = "SHU";
+			string emailAddress = "sachielsc@gmail.com";
+			string city = "This is city";
+			string address = "This is address";
+			string postalCode = "Postal code here";
+			string cellPhoneNumber = "111";
+			string poNumber = "PO Number here";
+
 			// navigate to the website
 			HomePage homePage = new HomePage(driver);
 			homePage.NavigateToHomePage();
 
 			// login
 			LoginPage loginPage = homePage.GoToLoginPage();
-			loginPage.TypeUserName("sachielsc@gmail.com");
-			loginPage.TypePassword("scsgdtcy3");
+			loginPage.TypeUserName(userName); /* also confirm the username input*/
+			loginPage.TypePassword(passWord); /* also confirm the password input*/
 			loginPage.ConfirmLoginAndGoBackToHomePage();
 
 			// search for an item
-			SearchResultPage searchResultPage = homePage.Search("blue");
+			SearchResultPage searchResultPage = homePage.Search(searchKeyWord);
 
 			// put a searched item into cart
 			searchResultPage.AddCertainItemToCart(1);
@@ -56,7 +69,7 @@ namespace SeleniumPOMUnitTest
 
 			// go to the checkout page and fill the info
 			CheckoutPage checkoutPage = shoppingCartPage.GoToCheckoutPage();
-			checkoutPage.FillInfo("Chris", "SHU", "sachielsc@gmail.com", "This is city", "This is address", "Postal code here", "111", "PO Number here");
+			checkoutPage.FillInfo(firstName, lastName, emailAddress, city, address, postalCode, cellPhoneNumber, poNumber);
 
 			// go to thank you page
 			ThankYouPage thankYouPage = checkoutPage.GoToThankYouPage();

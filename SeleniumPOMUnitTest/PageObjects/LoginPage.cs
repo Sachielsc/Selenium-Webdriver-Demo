@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
 using OpenQA.Selenium.Support.UI;
 using System;
@@ -33,11 +34,15 @@ namespace SeleniumPOMUnitTest.PageObjects
 		public void TypeUserName(string text)
 		{
 			userNameInputField.SendKeys(text);
+			String userNameTyped = userNameInputField.GetAttribute("value");
+			Assert.AreEqual(text, userNameTyped);
 		}
 
 		public void TypePassword(string text)
 		{
 			passwordInputField.SendKeys(text);
+			String passwordTyped = passwordInputField.GetAttribute("value");
+			Assert.AreEqual(text, passwordTyped);
 		}
 
 		public HomePage ConfirmLoginAndGoBackToHomePage ()
