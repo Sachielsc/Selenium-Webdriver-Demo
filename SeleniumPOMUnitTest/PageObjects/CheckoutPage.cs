@@ -79,7 +79,7 @@ namespace SeleniumPOMUnitTest.PageObjects
 
 			// payment method
 			WebDriverWait waitUntilPaymentMethodList = new WebDriverWait(driver, TimeSpan.FromSeconds(5));
-			waitUntilPaymentMethodList.Until(ExpectedConditions.ElementIsVisible(By.CssSelector("div.payment-method>ul.method-list")));
+			waitUntilPaymentMethodList.Until(ExpectedConditions.ElementIsVisible(By.CssSelector("div.payment-method div.method-name img[alt='Purchase Order']")));
 			driver.FindElement(By.CssSelector("div.payment-method div.payment-details>input#paymentmethod_3")).Click();
 			driver.FindElement(By.CssSelector("div#payment-method-buttons-container>input.payment-method-next-step-button")).Click();
 

@@ -18,7 +18,7 @@ namespace SeleniumPOMUnitTest
 
 {
 	[TestClass]
-	public class test
+	public class UnitTest1
 	{
 		IWebDriver driver;
 
@@ -71,9 +71,7 @@ namespace SeleniumPOMUnitTest
 		[TestCleanup]
 		public void TearDown()
 		{
-			driver.Close();
-			Console.Out.Write("\nTest completed!\n\nPress ENTER to exit\n");
-			Console.ReadLine();
+			// driver.Close();
 			driver.Quit();
 		}
 	}
