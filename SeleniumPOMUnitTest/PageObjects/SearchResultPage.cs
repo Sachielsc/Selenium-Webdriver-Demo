@@ -23,7 +23,7 @@ namespace SeleniumPOMUnitTest.PageObjects
 		public SearchResultPage(IWebDriver driver)
 		{
 			this.driver = driver;
-			wait = new WebDriverWait(driver, TimeSpan.FromSeconds(4));
+			wait = new WebDriverWait(driver, TimeSpan.FromSeconds(8));
 			PageFactory.InitElements(driver, this);
 		}
 

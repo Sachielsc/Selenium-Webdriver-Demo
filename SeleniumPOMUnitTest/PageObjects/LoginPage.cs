@@ -27,7 +27,7 @@ namespace SeleniumPOMUnitTest.PageObjects
 		public LoginPage(IWebDriver driver)
         {
             this.driver = driver;
-            wait = new WebDriverWait(driver, TimeSpan.FromSeconds(4));
+            wait = new WebDriverWait(driver, TimeSpan.FromSeconds(8));
             PageFactory.InitElements(driver, this);
         }
 

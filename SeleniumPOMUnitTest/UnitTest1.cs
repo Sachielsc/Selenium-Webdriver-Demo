@@ -66,6 +66,7 @@ namespace SeleniumPOMUnitTest
 			// go to the shopping cart and accept the term of service
 			ShoppingCartPage shoppingCartPage = searchResultPage.GoToShoppingCartPage();
 			shoppingCartPage.AcceptTermOfService();
+			shoppingCartPage.AssertSubTotalPrice(); /*confirm the subtotal output*/
 
 			// go to the checkout page and fill the info
 			CheckoutPage checkoutPage = shoppingCartPage.GoToCheckoutPage();
