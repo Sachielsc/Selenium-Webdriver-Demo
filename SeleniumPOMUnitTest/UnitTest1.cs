@@ -30,7 +30,7 @@ namespace SeleniumPOMUnitTest
 			options.AddArguments("--start-maximized");
 			options.AddArguments("disable-infobars");
 			driver = new ChromeDriver(options);
-			log.Info("Test initialization done!");
+			log.Info("Test initialization finishes!");
 		}
 
 		[TestMethod]
@@ -92,6 +92,7 @@ namespace SeleniumPOMUnitTest
 		{
 			// driver.Close();
 			driver.Quit();
+			log.Info("Test all done! Task finished at " + DateTime.Now);
 		}
 	}
 }

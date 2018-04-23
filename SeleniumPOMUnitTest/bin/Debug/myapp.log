@@ -1,3 +1,44 @@
-2018-04-24 08:58:53,627 [14] INFO SeleniumPOMUnitTest.UnitTest1 - Test initialization done!
-2018-04-24 08:58:53,638 [14] INFO SeleniumPOMUnitTest.UnitTest1 - Test execution starts!
-2018-04-24 08:59:15,413 [14] INFO SeleniumPOMUnitTest.UnitTest1 - Test execution finishes!
+Time: 2018-04-24 10:05:44,211
+Log level: INFO
+Logger: SeleniumPOMUnitTest.UnitTest1
+Message: Test initialization finishes!
+
+
+Time: 2018-04-24 10:05:44,224
+Log level: INFO
+Logger: SeleniumPOMUnitTest.UnitTest1
+Message: Test execution starts!
+
+
+Time: 2018-04-24 10:06:07,321
+Log level: INFO
+Logger: SeleniumPOMUnitTest.UnitTest1
+Message: Test execution finishes!
+
+
+Time: 2018-04-24 10:06:07,421
+Log level: INFO
+Logger: SeleniumPOMUnitTest.UnitTest1
+Message: Test all done! Task finished at 24/04/2018 10:06:07
+
+
+Time: 2018-04-24 10:07:43,872
+Log level: INFO
+Logger: SeleniumPOMUnitTest.UnitTest1
+Message: Test initialization finishes!
+
+Time: 2018-04-24 10:07:43,884
+Log level: INFO
+Logger: SeleniumPOMUnitTest.UnitTest1
+Message: Test execution starts!
+
+Time: 2018-04-24 10:08:07,186
+Log level: INFO
+Logger: SeleniumPOMUnitTest.UnitTest1
+Message: Test execution finishes!
+
+Time: 2018-04-24 10:08:07,283
+Log level: INFO
+Logger: SeleniumPOMUnitTest.UnitTest1
+Message: Test all done! Task finished at 24/04/2018 10:08:07
+
