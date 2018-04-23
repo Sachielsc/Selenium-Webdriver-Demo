@@ -22,6 +22,7 @@ namespace SeleniumPOMUnitTest
 	{
 		IWebDriver driver;
 		private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+		public TestContext TestContext { get; set; }
 
 		[TestInitialize()]
 		public void SyncDriver()
@@ -33,23 +34,24 @@ namespace SeleniumPOMUnitTest
 			log.Info("Test initialization finishes!");
 		}
 
+		[DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "C://Users//Admin//Desktop//repos//Charles-Selenium-Webdriver-POM-only//SeleniumPOMUnitTest//Data//data.csv", "data#csv", DataAccessMethod.Sequential)]
 		[TestMethod]
 		public void POMTestCase1()
 		{
 			log.Info("Test execution starts!");
 
-			// variable definitions
-			string userName = "sachielsc@gmail.com";
-			string passWord = "scsgdtcy3";
-			string searchKeyWord = "blue";
-			string firstName = "Chris";
-			string lastName = "SHU";
-			string emailAddress = "sachielsc@gmail.com";
-			string city = "This is city";
-			string address = "This is address";
-			string postalCode = "Postal code here";
-			string cellPhoneNumber = "111";
-			string poNumber = "PO Number here";
+			// variable definitions (data-driven)
+			string userName = Convert.ToString(this.TestContext.DataRow["userName"]);
+			string passWord = Convert.ToString(this.TestContext.DataRow["passWord"]);
+			string searchKeyWord = Convert.ToString(this.TestContext.DataRow["searchKeyWord"]);
+			string firstName = Convert.ToString(this.TestContext.DataRow["firstName"]);
+			string lastName = Convert.ToString(this.TestContext.DataRow["lastName"]);
+			string emailAddress = Convert.ToString(this.TestContext.DataRow["emailAddress"]);
+			string city = Convert.ToString(this.TestContext.DataRow["city"]);
+			string address = Convert.ToString(this.TestContext.DataRow["address"]);
+			string postalCode = Convert.ToString(this.TestContext.DataRow["postalCode"]);
+			string cellPhoneNumber = Convert.ToString(this.TestContext.DataRow["cellPhoneNumber"]);
+			string poNumber = Convert.ToString(this.TestContext.DataRow["poNumber"]);
 
 			// navigate to the website
 			HomePage homePage = new HomePage(driver);
