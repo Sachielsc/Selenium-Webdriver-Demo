@@ -21,6 +21,7 @@ namespace SeleniumPOMUnitTest
 	public class UnitTest1
 	{
 		IWebDriver driver;
+		private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
 		[TestInitialize()]
 		public void SyncDriver()
@@ -29,11 +30,14 @@ namespace SeleniumPOMUnitTest
 			options.AddArguments("--start-maximized");
 			options.AddArguments("disable-infobars");
 			driver = new ChromeDriver(options);
+			log.Info("Test initialization done!");
 		}
 
 		[TestMethod]
 		public void POMTestCase1()
 		{
+			log.Info("Test execution starts!");
+
 			// variable definitions
 			string userName = "sachielsc@gmail.com";
 			string passWord = "scsgdtcy3";
@@ -80,6 +84,7 @@ namespace SeleniumPOMUnitTest
 
 			// logout
 			homePageBack.Logout();
+			log.Info("Test execution finishes!");
 		}
 
 		[TestCleanup]

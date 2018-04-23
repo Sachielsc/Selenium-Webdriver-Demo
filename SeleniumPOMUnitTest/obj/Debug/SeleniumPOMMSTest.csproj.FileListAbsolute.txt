@@ -16,3 +16,6 @@ C:\Users\Admin\Desktop\repos\Charles-Selenium-Webdriver-POM-only\SeleniumPOMUnit
 C:\Users\Admin\Desktop\repos\Charles-Selenium-Webdriver-POM-only\SeleniumPOMUnitTest\obj\Debug\SeleniumPOMMSTest.csproj.CopyComplete
 C:\Users\Admin\Desktop\repos\Charles-Selenium-Webdriver-POM-only\SeleniumPOMUnitTest\obj\Debug\SeleniumPOMUnitTest.dll
 C:\Users\Admin\Desktop\repos\Charles-Selenium-Webdriver-POM-only\SeleniumPOMUnitTest\obj\Debug\SeleniumPOMUnitTest.pdb
+C:\Users\Admin\Desktop\repos\Charles-Selenium-Webdriver-POM-only\SeleniumPOMUnitTest\bin\Debug\log4net.config
+C:\Users\Admin\Desktop\repos\Charles-Selenium-Webdriver-POM-only\SeleniumPOMUnitTest\bin\Debug\log4net.dll
+C:\Users\Admin\Desktop\repos\Charles-Selenium-Webdriver-POM-only\SeleniumPOMUnitTest\bin\Debug\log4net.xml
