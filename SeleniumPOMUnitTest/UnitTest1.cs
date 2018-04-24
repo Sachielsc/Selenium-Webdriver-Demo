@@ -24,6 +24,20 @@ namespace SeleniumPOMUnitTest
 		private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 		public TestContext TestContext { get; set; }
 
+		// for SpecFlow
+		public string UserNameSpec;
+		public string PassWordSpec;
+		public void LogInSpec()
+		{
+			HomePage homePage = new HomePage(driver);
+			homePage.NavigateToHomePage();
+			LoginPage loginPage = homePage.GoToLoginPage();
+			loginPage.TypeUserName(UserNameSpec); 
+			loginPage.TypePassword(PassWordSpec); 
+			loginPage.ConfirmLoginAndGoBackToHomePage();
+			// TODO: return a web element here
+		}
+
 		// remember to edit this path when the path of root folder is changed
 		public const string dataPath = "C://Users//Admin//Desktop//repos//Charles-Selenium-Webdriver-POM-only//SeleniumPOMUnitTest//Data//data.csv";
 
@@ -69,8 +83,8 @@ namespace SeleniumPOMUnitTest
 			// search for an item
 			SearchResultPage searchResultPage = homePage.Search(searchKeyWord);
 
-			// put a searched item into cart
-			searchResultPage.AddCertainItemToCart(1);
+			// put the first searched item into cart
+			searchResultPage.AddCertainItemToCart(0);
 
 			// go to the shopping cart and accept the term of service
 			ShoppingCartPage shoppingCartPage = searchResultPage.GoToShoppingCartPage();

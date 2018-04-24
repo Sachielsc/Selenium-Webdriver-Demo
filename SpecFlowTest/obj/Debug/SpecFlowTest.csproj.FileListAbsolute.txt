@@ -21,3 +21,12 @@ C:\Users\Admin\Desktop\repos\Charles-Selenium-Webdriver-POM-only\SpecFlowTest\ob
 C:\Users\Admin\Desktop\repos\Charles-Selenium-Webdriver-POM-only\SpecFlowTest\obj\Debug\SpecFlowTest.csproj.CopyComplete
 C:\Users\Admin\Desktop\repos\Charles-Selenium-Webdriver-POM-only\SpecFlowTest\obj\Debug\SpecFlowTest.dll
 C:\Users\Admin\Desktop\repos\Charles-Selenium-Webdriver-POM-only\SpecFlowTest\obj\Debug\SpecFlowTest.pdb
+C:\Users\Admin\Desktop\repos\Charles-Selenium-Webdriver-POM-only\SpecFlowTest\bin\Debug\log4net.config
+C:\Users\Admin\Desktop\repos\Charles-Selenium-Webdriver-POM-only\SpecFlowTest\bin\Debug\SeleniumPOMUnitTest.dll
+C:\Users\Admin\Desktop\repos\Charles-Selenium-Webdriver-POM-only\SpecFlowTest\bin\Debug\log4net.dll
+C:\Users\Admin\Desktop\repos\Charles-Selenium-Webdriver-POM-only\SpecFlowTest\bin\Debug\WebDriver.dll
+C:\Users\Admin\Desktop\repos\Charles-Selenium-Webdriver-POM-only\SpecFlowTest\bin\Debug\WebDriver.Support.dll
+C:\Users\Admin\Desktop\repos\Charles-Selenium-Webdriver-POM-only\SpecFlowTest\bin\Debug\SeleniumPOMUnitTest.pdb
+C:\Users\Admin\Desktop\repos\Charles-Selenium-Webdriver-POM-only\SpecFlowTest\bin\Debug\log4net.xml
+C:\Users\Admin\Desktop\repos\Charles-Selenium-Webdriver-POM-only\SpecFlowTest\bin\Debug\WebDriver.xml
+C:\Users\Admin\Desktop\repos\Charles-Selenium-Webdriver-POM-only\SpecFlowTest\bin\Debug\WebDriver.Support.xml

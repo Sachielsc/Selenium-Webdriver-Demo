@@ -17,7 +17,7 @@ namespace SpecFlowTest
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.3.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [TechTalk.SpecRun.FeatureAttribute("Credentials", Description="\tIn order to log in\r\n\tAs an user\r\n\tI want to be able to log in", SourceFile="Credentials.feature", SourceLine=0)]
+    [TechTalk.SpecRun.FeatureAttribute("Credentials", Description="\tIn order to log in\r\n\tAs a user\r\n\tI want to log in", SourceFile="Credentials.feature", SourceLine=0)]
     public partial class CredentialsFeature
     {
         
@@ -30,7 +30,7 @@ namespace SpecFlowTest
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Credentials", "\tIn order to log in\r\n\tAs an user\r\n\tI want to be able to log in", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Credentials", "\tIn order to log in\r\n\tAs a user\r\n\tI want to log in", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -61,22 +61,22 @@ namespace SpecFlowTest
             testRunner.CollectScenarioErrors();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Enter username and password to log in", new string[] {
+        [TechTalk.SpecRun.ScenarioAttribute("Log in", new string[] {
                 "mytag"}, SourceLine=6)]
-        public virtual void EnterUsernameAndPasswordToLogIn()
+        public virtual void LogIn()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Enter username and password to log in", new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Log in", new string[] {
                         "mytag"});
 #line 7
 this.ScenarioSetup(scenarioInfo);
 #line 8
- testRunner.Given("I have entered \"sachielsc@gmail.com\" into the userName field", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I have entered \'sachielsc@gmail.com\' into the userName field", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 9
- testRunner.And("I also have entered \"scsgdtcy3\" into the passWord field", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I have entered \'scsgdtcy3\' into the passWord field", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 10
- testRunner.When("I press add the log in button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I press the log in button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 11
- testRunner.Then("I should enter the home page with my account logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I should be able to see my account name \'sachielsc@gmail.com\' on the home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
