@@ -24,6 +24,9 @@ namespace SeleniumPOMUnitTest
 		private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 		public TestContext TestContext { get; set; }
 
+		// remember to edit this path when the path of root folder is changed
+		public const string dataPath = "C://Users//Admin//Desktop//repos//Charles-Selenium-Webdriver-POM-only//SeleniumPOMUnitTest//Data//data.csv";
+
 		[TestInitialize()]
 		public void SyncDriver()
 		{
@@ -34,7 +37,7 @@ namespace SeleniumPOMUnitTest
 			log.Info("Test initialization finishes!");
 		}
 
-		[DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "C://Users//Admin//Desktop//repos//Charles-Selenium-Webdriver-POM-only//SeleniumPOMUnitTest//Data//data.csv", "data#csv", DataAccessMethod.Sequential)]
+		[DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", dataPath, "data#csv", DataAccessMethod.Sequential)]
 		[TestMethod]
 		public void POMTestCase1()
 		{
