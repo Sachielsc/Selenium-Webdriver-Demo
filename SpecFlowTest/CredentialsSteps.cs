@@ -12,7 +12,8 @@ namespace SpecFlowTest
         [Given(@"I have entered '(.*)' into the userName field")]
         public void GivenIHaveEnteredIntoTheUserNameField(string userName)
         {
-			unitTest1.UserNameSpec = userName;
+			// unitTest1.UserNameSpec = userName;
+			unitTest1.SyncDriver();
 		}
         
         [Given(@"I have entered '(.*)' into the passWord field")]
