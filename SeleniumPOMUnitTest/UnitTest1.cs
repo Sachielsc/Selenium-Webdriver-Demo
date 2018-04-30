@@ -24,22 +24,8 @@ namespace SeleniumPOMUnitTest
 		private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 		public TestContext TestContext { get; set; }
 
-		// for SpecFlow
-		public string UserNameSpec;
-		public string PassWordSpec;
-		public void LogInSpec()
-		{
-			HomePage homePage = new HomePage(driver);
-			homePage.NavigateToHomePage();
-			LoginPage loginPage = homePage.GoToLoginPage();
-			loginPage.TypeUserName(UserNameSpec); 
-			loginPage.TypePassword(PassWordSpec); 
-			loginPage.ConfirmLoginAndGoBackToHomePage();
-			// TODO: return a web element here
-		}
-
 		// remember to edit this path when the path of root folder is changed
-		public const string dataPath = "C://Users//Admin//Desktop//repos//Charles-Selenium-Webdriver-POM-only//SeleniumPOMUnitTest//Data//data.csv";
+		public const string dataPath = "C://Users//Admin//Desktop//repos//Selenium-Webdriver-Demo//SeleniumPOMUnitTest//Data//data.csv";
 
 		[TestInitialize()]
 		public void SyncDriver()
