@@ -26,7 +26,7 @@ namespace SeleniumPOMUnitTest
 
 		// remember to edit this path when the path of root folder is changed
 		public const string dataPath = "C://Users//Admin//Desktop//repos//Selenium-Webdriver-Demo//SeleniumPOMUnitTest//Data//data.csv";
-
+		
 		[TestInitialize()]
 		public void SyncDriver()
 		{
@@ -62,8 +62,8 @@ namespace SeleniumPOMUnitTest
 
 			// login
 			LoginPage loginPage = homePage.GoToLoginPage();
-			loginPage.TypeUserName(userName); /* also confirm the username input*/
-			loginPage.TypePassword(passWord); /* also confirm the password input*/
+			loginPage.TypeUserName(userName); /* also confirm the username input */
+			loginPage.TypePassword(passWord); /* also confirm the password input */
 			loginPage.ConfirmLoginAndGoBackToHomePage();
 
 			// search for an item
