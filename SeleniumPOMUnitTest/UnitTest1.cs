@@ -24,9 +24,6 @@ namespace SeleniumPOMUnitTest
 		private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 		public TestContext TestContext { get; set; }
 
-		// remember to edit this path when the path of root folder is changed
-		public const string dataPath = "C://Users//Admin//Desktop//repos//Selenium-Webdriver-Demo//SeleniumPOMUnitTest//Data//data.csv";
-		
 		[TestInitialize()]
 		public void SyncDriver()
 		{
@@ -37,7 +34,7 @@ namespace SeleniumPOMUnitTest
 			log.Info("Test initialization finishes!");
 		}
 
-		[DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", dataPath, "data#csv", DataAccessMethod.Sequential)]
+		[DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\Data\\data.csv", "data#csv", DataAccessMethod.Sequential)] // Important tip: this is how I use a relative path in the annotation
 		[TestMethod]
 		public void POMTestCase1()
 		{
@@ -62,8 +59,8 @@ namespace SeleniumPOMUnitTest
 
 			// login
 			LoginPage loginPage = homePage.GoToLoginPage();
-			loginPage.TypeUserName(userName); /* also confirm the username input */
-			loginPage.TypePassword(passWord); /* also confirm the password input */
+			loginPage.TypeUserName(userName); /* also has an assertion */
+			loginPage.TypePassword(passWord); /* also has an assertion */
 			loginPage.ConfirmLoginAndGoBackToHomePage();
 
 			// search for an item
